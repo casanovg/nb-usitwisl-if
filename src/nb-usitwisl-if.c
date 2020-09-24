@@ -1,10 +1,10 @@
 /*
- *  NB TWI interrupt-free USI-hardware driver
+ *  NB NB USI-device interrupt-free TWI driver
  *  Author: Gustavo Casanova
  *  .............................................
  *  File: nb-usitwisl-if.c (Slave driver library)
  *  .............................................
- *  Version: 1.0.1 / 2020-09-07
+ *  Version: 1.0.2 / 2020-09-19
  *  gustavo.casanova@nicebots.com
  *  .............................................
  *  Based on work by Atmel (AVR312) et others
