@@ -1,6 +1,8 @@
 # nb-usitwisl-if
-USI-based interrupt-free TWI (I2C) slave driver for ATTiny microcontrollers
+USI-based interrupt-free TWI (I2C) slave driver for ATtiny microcontrollers
 
-This driver is designed to be used in I2C applications that require to operate without using the microcontroller standard interrupts. In fact the application must disable the interrupts at start. It is used almost exclusively in  [bootloaders](https://github.com/casanovg/timonel) and similar applications.
+This driver is for Microchip (ex Atmel) [ATtiny devices](https://en.wikipedia.org/wiki/ATtiny_microcontroller_comparison_chart) that implement the I2C protocol by using the Universal Serial Interface (USI) peripheral, that is, microcontrollers that are not equipped with I2C-specific hardware.
 
-For standard user applications, it is recommended to use a driver [version that uses interrupts](https://github.com/casanovg/nb-usitwisl).
+This particular version is designed for applications that cannot use the microcontroller standard interrupt vectors. In fact, the application should disable interrupts at startup to implement this software. It is used almost exclusively in  [bootloaders](https://github.com/casanovg/timonel) and similar applications.
+
+For standard I2C applications, it is recommended to use a driver [version that uses interrupts](https://github.com/casanovg/nb-usitwisl).
